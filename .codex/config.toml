@@ -1,0 +1,35 @@
+[mcp_servers.laravel-boost]
+command = "vendor/bin/sail"
+args = ["artisan", "boost:mcp"]
+cwd = "/Users/declanfitzpatrick/Project/fubball"
+
+[mcp_servers.laravel-boost.tools.application-info]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.search-docs]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.database-schema]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.last-error]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.read-log-entries]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.browser-logs]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.get-absolute-url]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.database-query]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.tinker]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost.tools.record-rule]
+approval_mode = "approve"
+

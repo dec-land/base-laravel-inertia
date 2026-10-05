@@ -1,0 +1,29 @@
+{
+    "agents": [
+        "antigravity",
+        "codex"
+    ],
+    "cloud": false,
+    "guidelines": false,
+    "mcp": true,
+    "nightwatch": true,
+    "packages": [
+        "filament/filament",
+        "spatie/laravel-query-builder"
+    ],
+    "sail": true,
+    "skills": [
+        "infer-conventions",
+        "ai-sdk-development",
+        "laravel-best-practices",
+        "testing-best-practices",
+        "configure-nightwatch",
+        "octane-development",
+        "socialite-development",
+        "inertia-react-development",
+        "echo-react-development",
+        "echo-development",
+        "tailwindcss-development",
+        "laravel-query-builder"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "php artisan typescript:transform && vite",
+    "build:ssr": "tsc && vite build && vite build --ssr",
+    "build": "tsc && vite build",
+    "format": "biome check --write --unsafe resources",
+    "build:tsc": "tsc --noEmit",
+    "build:tsc-watch": "tsc --noEmit --watch"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.5",
+    "@laravel/echo-react": "^2.3.7",
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "daisyui": "^5.5.23",
+    "laravel-echo": "^2.3.7",
+    "laravel-vite-plugin": "^3.1.0",
+    "pusher-js": "^8.5.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.0.16"
+  },
+  "dependencies": {
+    "@inertiajs/react": "^3.4.0",
+    "@inertiajs/vite": "^3.4.0",
+    "axios": "^1.18.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.21",
+    "js-cookie": "^3.0.8",
+    "lucide-react": "^1.18.0",
+    "motion": "^13.4.4",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-error-boundary": "^6.1.2",
+    "ziggy-js": "^2.6.2"
+  }
+}

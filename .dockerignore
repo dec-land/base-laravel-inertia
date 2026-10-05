@@ -1,0 +1,64 @@
+# 1. Laravel-specific files and directories
+bootstrap/cache/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+*.env*
+vendor/
+
+# 2. Node.js and frontend-related files
+node_modules/
+npm-debug.log*
+dist/
+build/
+**/*.map
+.pnpm-debug.log
+pnpm-lock.yaml
+yarn.lock
+
+# 3. IDE and editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# 4. Git and version control
+.git/
+.gitignore
+.gitattributes
+
+# 5. System-specific and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*~
+
+# 6. CI/CD configuration files
+.github/
+.gitlab-ci.yml
+
+# 7. Docker-specific and orchestration files
+docker-compose.override.yml
+.docker/
+.dockerignore
+traefik/
+*.tar
+
+# 8. Other files/directories not needed in the image
+fly.toml
+.rr.yml
+rr
+frankenphp
+.env.testing
+public/hot
+public/storage
+tests/
+phpunit.xml
+.phpunit.result.cache
+.agents/
+.ai/
+.codex/
+.env.example
+storage/testing/*

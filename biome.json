@@ -1,0 +1,88 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["resources/**/*"]
+  },
+  "css": {
+    "parser": {
+      "cssModules": true,
+      "tailwindDirectives": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "react": "all",
+      "test": "all",
+      "solid": "none",
+      "project": "all"
+    },
+    "rules": {
+      "preset": "recommended",
+      "style": {
+        "preset": "recommended",
+        "useSelfClosingElements": "on",
+        "noDefaultExport": "off",
+        "useComponentExportOnlyModules": "off"
+      },
+      "complexity": {
+        "preset": "recommended",
+        "noExcessiveCognitiveComplexity": {
+          "level": "warn",
+          "options": {
+            "maxAllowedComplexity": 25
+          }
+        }
+      },
+      "a11y": "on",
+      "nursery": "off",
+      "correctness": {
+        "preset": "recommended",
+        "useImportExtensions": "off",
+        "noUndeclaredDependencies": "off",
+        "useUniqueElementIds": "off",
+        "noUnresolvedImports": "off"
+      },
+      "performance": {
+        "noJsxPropsBind": "off"
+      },
+      "security": {
+        "preset": "recommended",
+        "noSecrets": {
+          "level": "error",
+          "options": {
+            "entropyThreshold": 55
+          }
+        }
+      },
+      "suspicious": {
+        "preset": "recommended",
+        "noConsole": "off",
+        "noLeakedRender": "off",
+        "noArrayIndexKey": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteStyle": "single",
+      "semicolons": "always"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  }
+}

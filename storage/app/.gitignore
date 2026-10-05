@@ -1,0 +1,9 @@
+
+*
+# Allow these folders and files
+!.gitignore
+!public/
+!private/
+!dummy_media/
+!dummy_media/*.jpg
+!dummy_media/*.pdf
