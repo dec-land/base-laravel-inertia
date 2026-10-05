@@ -10,9 +10,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class RedirectRestrictedWebRequests
 {
-    public function __construct(
-    ) {}
-
     public function handle(Request $request, Closure $next): Response
     {
         // Usually has redirect things here for if site is down or need to choose a favourite team
